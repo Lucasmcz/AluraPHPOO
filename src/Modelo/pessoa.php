@@ -1,11 +1,12 @@
 <?php
 
-namespace Alura\Banco\modelo;
+
+namespace Alura\Banco\Modelo;
 
 class Pessoa
 {
-  protected Cpf $cpf;
-  private  $nome;
+  protected $nome;
+  private $cpf;
 
   protected function validaNomeTitular(string $nome)
   {
@@ -16,7 +17,7 @@ class Pessoa
     }
     else
     {
-      echo "Ok";
+
     }
   }
   public function __construct(string $nome,Cpf $cpf)
