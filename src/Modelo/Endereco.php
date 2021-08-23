@@ -1,10 +1,10 @@
 <?php
 
-namespace Alura\Banco\modelo;
+namespace Alura\Banco\Modelo;
+
 
 class Endereco
 {
-
 
   private string $cidade;
   private string $bairro;
