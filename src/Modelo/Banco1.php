@@ -1,11 +1,11 @@
 <?php
-
-namespace Alura\Banco\modelo;
 //------Requires---------//
-require_once 'CONTA.php';
-require_once 'endereco.php';
-require_once 'titular.php';
-require_once 'cpf.php';
+require_once 'autoload.php';//Para não precisar fazer varios require_once
+
+use Alura\Banco\modelo\Conta\Titular;
+use Alura\Banco\modelo\Endereco;
+use Alura\Banco\modelo\Cpf;
+use Alura\Banco\modelo\Conta\Conta;
 
 ////////////////////////////
 $endereco = new Endereco ('Shingashima','End-Wall','Historia Freecs','4.2');
@@ -24,6 +24,6 @@ $outra = new Conta(new Titular(new Cpf("123.231.210-21"),"Historia Freecs",$outr
 
 var_dump($primeiraconta);
 var_dump($segundaconta);
-var_dump($outra);
+//var_dump($outra);
 //echo CONTA::retornarnumcontas();
  ?>
