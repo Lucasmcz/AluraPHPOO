@@ -39,6 +39,16 @@ abstract class Funcionario extends Pessoa
     return $this->salario *0.1;
   }
 
+  protected function recebeaumento(float $valorAumento):void
+  {
+    if($valorAumento < 0)
+    {
+      echo 'Aumento Positivo';
+      return;
+    }
+    $this->salario += $valorAumento;
+  }
+
 }
 
 
