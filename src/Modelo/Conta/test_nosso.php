@@ -16,4 +16,12 @@ $conta_kageyama = new Conta($Kageyama);
 var_dump($conta_kageyama);
 
 
+$nekoma_adress = new Endereco('Tokyo','Nerima Ward','Cat','4.15');//Cidade/Bairro/Rua/Numero
+$kenma = new Titular(new Cpf("123.214.234-21"),"Kenma",$nekoma_adress);
+$conta_kenma = new Conta($kenma);
+$conta_kenma->depositar(1000000);
+
+
+var_dump($conta_kenma);
+
  ?>
